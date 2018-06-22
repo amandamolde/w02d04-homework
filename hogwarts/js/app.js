@@ -1,4 +1,4 @@
-// if (typeof jQuery == 'undefined'){
+2// if (typeof jQuery == 'undefined'){
 //   console.log('oops! I still have to link my jQuery properly!');
 // } else {
 //   console.log('I did it! I linked jQuery and this js file!')
@@ -7,12 +7,15 @@
 
  $(() => {
 	// put jQuery in here
+	
+// Year 1
 	const $container = $('#container');
 
 	const $h1 = $('<h1></h1>');
 	$h1.text('Hogwarts');
 	$container.append($h1);
 
+// Year 2
 	const $h2 = $('<h2></h2>')
 	$h2.text('Amanda');
 	$container.append($h2);
@@ -26,8 +29,13 @@
 	$h4.addClass('owl');
 	$container.append($h4);
 
+	// const $h4_2 = $('<h4></h4>');
+	// $h4_2.text('Hornbeam Wand	with Dragon Heartstring Core');
+	// $container.append($h4_2);
+
 	$container.append('<h4>Hornbeam Wand with Dragon Heartstring Core</h4>');
 
+// Year 3
 	const $ul = $('<ul storage="trunk"></ul>');
 	$ul.append('<li>butter beer</li>');
 	$ul.append('<li class="secret">invisibility cloak</li>');
@@ -45,31 +53,22 @@
 // 		$("#trunk").append("<li>" + list[i]);
 // 	};
 
+// Year 4
 const $h5 = $('<h5></h5>');
 $h5.text('Spring 2017');
 $container.append($h5);
 
-
 const $table = $('<table></table>');
-const $thead = $('<thead></thead>');
-const $tr = $('<tr></tr>');
-const $th = $('<th></th>');
-const $td = $('<td></td>');
-
-// $container.append($table);
-// $table.append($thead);
-// $thead.append($tr);
-// $tr.append('<th>Day</th>');
-// $tr.append('<th>Classes</th>');
-// $thead.append('<tr></tr>');
-// $tr.append('<td>Monday</td>');
-// $thead.append('<tr></tr>');
-// $thead.append('<tr></tr>');
-// $thead.append('<tr></tr>');
-// $thead.append('<tr></tr>');
+$container.append('<table><thead><tr><th>Day</th><th>Classes</th></tr><tr><td>Monday</td><td>Classes1</td></tr></tr><tr><td>Tuesday</td><td>Classes2</td></tr></tr><tr><td>Wednesday</td><td>Classes3</td></tr></tr><tr><td>Thursday</td><td>Classes4</td></tr></tr><tr><td>Friday</td><td>Classes5</td></tr></thead></table>');
 
 
-//
+// Year 5
+
+// $('h4').remove();
+
+
+
+// $('#trunk').remove('butter beer');
 
 
 });
