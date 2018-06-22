@@ -45,8 +45,31 @@
 // 		$("#trunk").append("<li>" + list[i]);
 // 	};
 
+const $h5 = $('<h5></h5>');
+$h5.text('Spring 2017');
+$container.append($h5);
 
 
+const $table = $('<table></table>');
+const $thead = $('<thead></thead>');
+const $tr = $('<tr></tr>');
+const $th = $('<th></th>');
+const $td = $('<td></td>');
+
+// $container.append($table);
+// $table.append($thead);
+// $thead.append($tr);
+// $tr.append('<th>Day</th>');
+// $tr.append('<th>Classes</th>');
+// $thead.append('<tr></tr>');
+// $tr.append('<td>Monday</td>');
+// $thead.append('<tr></tr>');
+// $thead.append('<tr></tr>');
+// $thead.append('<tr></tr>');
+// $thead.append('<tr></tr>');
+
+
+//
 
 
 });
