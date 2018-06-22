@@ -28,4 +28,25 @@
 
 	$container.append('<h4>Hornbeam Wand with Dragon Heartstring Core</h4>');
 
+	const $ul = $('<ul storage="trunk"></ul>');
+	$ul.append('<li>butter beer</li>');
+	$ul.append('<li class="secret">invisibility cloak</li>');
+	$ul.append('<li class="secret">magic map</li>');
+	$ul.append('<li class="secret">time turner</li>');
+	$ul.append('<li class="owl">leash</li>');
+	$ul.append("<li>Bertie Bott's Every Flavor Beans</li>");
+	$container.append($ul);
+
+
+// list = ['butter beer', 'invisibility cloak', 'magic map', 'time turner', 'leash', "Bertie Bott's Every Flavor Beans"];
+
+// 	$container.append("<ul storage='trunk'></ul>");
+// 	for (i = 0; i < list.length; i++) {
+// 		$("#trunk").append("<li>" + list[i]);
+// 	};
+
+
+
+
+
 });
