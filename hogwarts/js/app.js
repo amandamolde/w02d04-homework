@@ -11,38 +11,48 @@
 // Year 1
 	const $container = $('#container');
 
-	const $h1 = $('<h1></h1>');
-	$h1.text('Hogwarts');
-	$container.append($h1);
+	const $school = $('<h1></h1>');
+	$school.text('Hogwarts');
+	$container.append($school);
 
 // Year 2
-	const $h2 = $('<h2></h2>')
-	$h2.text('Amanda');
-	$container.append($h2);
+	const $name = $('<h2></h2>')
+	$name.text('Amanda');
+	$container.append($name);
 
-	const $h3 = $('<h3></h3>');
-	$h3.text('Gryffindor');
-	$container.append($h3);
+	const $house = $('<h3></h3>');
+	$house.text('Gryffindor');
+	$container.append($house);
 
-	const $h4 = $('<h4></h4>');
-	$h4.text('Leo');
-	$h4.addClass('owl');
-	$container.append($h4);
+	const $pet = $('<h4></h4>');
+	$pet.text('Leo');
+	$pet.addClass('owl');
+	$container.append($pet);
 
 	// const $h4_2 = $('<h4></h4>');
 	// $h4_2.text('Hornbeam Wand	with Dragon Heartstring Core');
 	// $container.append($h4_2);
 
-	$container.append('<h4>Hornbeam Wand with Dragon Heartstring Core</h4>');
+	const $wand = $('<h4></h4>');
+
+	$wand.text('Hornbeam Wand with Dragon Heartstring Core')
+
+	$container.append($wand);
 
 // Year 3
 	const $ul = $('<ul storage="trunk"></ul>');
-	$ul.append('<li>butter beer</li>');
-	$ul.append('<li class="secret">invisibility cloak</li>');
-	$ul.append('<li class="secret">magic map</li>');
-	$ul.append('<li class="secret">time turner</li>');
-	$ul.append('<li class="owl">leash</li>');
-	$ul.append("<li>Bertie Bott's Every Flavor Beans</li>");
+	const $butterBeer = $('<li>butter beer</li>');
+	$ul.append($butterBeer);
+	const $invisibilityCloak = $('<li class="secret">invisibility cloak</li>');
+	$ul.append($invisibilityCloak);
+	const $magicMap = $('<li class="secret">magic map</li>');
+	$ul.append($magicMap);
+	const $timeTurner = $('<li class="secret">time turner</li>');
+	$ul.append($timeTurner);
+	const $leash = $('<li class="owl">leash</li>');
+	$ul.append($leash);
+	const $bertieBeans = $("<li>Bertie Bott's Every Flavor Beans</li>");
+	$ul.append($bertieBeans);
 	$container.append($ul);
 
 
@@ -54,21 +64,29 @@
 // 	};
 
 // Year 4
-const $h5 = $('<h5></h5>');
-$h5.text('Spring 2017');
-$container.append($h5);
+const $semester = $('<h5></h5>');
+$semester.text('Spring 2017');
+$container.append($semester);
 
-const $table = $('<table></table>');
-$container.append('<table><thead><tr><th>Day</th><th>Classes</th></tr><tr><td>Monday</td><td>Classes1</td></tr></tr><tr><td>Tuesday</td><td>Classes2</td></tr></tr><tr><td>Wednesday</td><td>Classes3</td></tr></tr><tr><td>Thursday</td><td>Classes4</td></tr></tr><tr><td>Friday</td><td>Classes5</td></tr></thead></table>');
+
+// Herbology, , , , , , Quidditch practice
+$container.append('<table><thead><tr><th>Day</th><th>Classes</th></tr><tr><td>Monday</td><td>Defense Against the Dark Arts, Charms</td></tr></tr><tr><td>Tuesday</td><td>History of Magic, Transfiguration</td></tr></tr><tr><td>Wednesday</td><td>Potions, Divination</td></tr></tr><tr><td>Thursday</td><td>Herbology, Quidditch practice</td></tr></tr><tr><td>Friday</td><td>Defense Against the Dark Arts, Potions</td></tr></thead></table>');
 
 
 // Year 5
 
-// $('h4').remove();
+$wand.remove();
 
+$butterBeer.remove();
 
+$wand.text('Holly Wand with Unicorn Hair Core');
+$wand.insertAfter($pet);
 
-// $('#trunk').remove('butter beer');
+$wand.css('color', 'indigo');
+
+const myPet = $pet.detach();
+myPet.insertAfter($house);
+
 
 
 });
