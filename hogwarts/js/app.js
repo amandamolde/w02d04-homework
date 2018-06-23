@@ -100,4 +100,13 @@ $leash.addClass("cabbage");
 
 $leash.removeClass("cabbage");
 
+
+// Year 7
+
+$semester.text("Fall 2018");
+
+$ul.prepend('<li>butter beer</li>');
+
+$ul.attr('storage', 'chest');
+
 });

@@ -1,6 +1,9 @@
 body {
   background-color: #F8F7FF;
   text-align: center;
+  background-image: url(https://hpmedia.bloomsbury.com/rep/g/page-background%20-%20product.png);
+  margin: 0 auto;
+  color: white;
 }
 .owl {
 	font-family: fantasy;
