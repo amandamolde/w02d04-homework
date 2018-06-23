@@ -84,8 +84,13 @@ $wand.insertAfter($pet);
 
 $wand.css('color', 'indigo');
 
-const myPet = $pet.detach();
-myPet.insertAfter($house);
+// const myPet = $pet.detach();
+// myPet.insertAfter($house);
+
+$pet.remove();
+$pet.insertAfter($house);
+
+// Where we supposed to use .detach(); to send our pet on a mission? I couldn't get it to work, so I used .remove();
 
 
 
