@@ -92,6 +92,12 @@ $pet.insertAfter($house);
 
 // Where we supposed to use .detach(); to send our pet on a mission? I couldn't get it to work, so I used .remove();
 
+// Year 6
 
+$('.secret').hide('slow').delay(2000).show('slow');
+
+$leash.addClass("cabbage");
+
+$leash.removeClass("cabbage");
 
 });
